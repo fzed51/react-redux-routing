@@ -1,6 +1,9 @@
 const path = require("path");
 
 const config = {
+  output: {
+    filename: 'index.js'
+  },
   module: {
     rules: [
       {
@@ -24,7 +27,7 @@ const config = {
   resolve: {
     extensions: [".js", ".jsx", ".json"]
   },
-  devtool: "source-map"
+  devtool: "eval-source-map"
 };
 
 module.exports = config;

@@ -1,12 +1,19 @@
 {
   "name": "react-redux-routing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "routeur react/redux simple et compréhensible.",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production --devtool source-map",
+    "watch": "webpack --watch --hot --mode development"
   },
-  "keywords": ["connectedRouteur", "Lien", "Route", "Routeur"],
+  "keywords": [
+    "connectedRouteur",
+    "Lien",
+    "Route",
+    "Routeur"
+  ],
   "author": "Fabien SANCHEZ",
   "license": "MIT",
   "devDependencies": {
