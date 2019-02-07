@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "build": "webpack --mode production --devtool source-map",
-    "watch": "webpack --watch --hot --mode development"
+    "build": "babel src --out-dir dist --sourveMaps",
+    "test": "jest --coverage"
   },
   "keywords": [
     "connectedRouteur",
@@ -16,7 +16,13 @@
   ],
   "author": "Fabien SANCHEZ",
   "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/plugin-proposal-json-strings": "^7.2.0",
@@ -24,12 +30,6 @@
     "@babel/plugin-syntax-import-meta": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
-    "react": "^16.8.0",
-    "react-redux": "^6.0.0",
-    "redux": "^4.0.1",
-    "webpack": "^4.29.1",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-server": "^3.1.14"
+    "jest": "^24.1.0"
   }
 }

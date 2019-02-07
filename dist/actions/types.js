@@ -1,0 +1,12 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.ROUTEUR_ERROR = exports.ROUTEUR_PUSH = exports.ROUTEUR_CHANGE_LOCATION = void 0;
+var ROUTEUR_CHANGE_LOCATION = "ROUTEUR_CHANGE_LOCATION";
+exports.ROUTEUR_CHANGE_LOCATION = ROUTEUR_CHANGE_LOCATION;
+var ROUTEUR_PUSH = "ROUTEUR_PUSH";
+exports.ROUTEUR_PUSH = ROUTEUR_PUSH;
+var ROUTEUR_ERROR = "ROUTEUR_ERROR";
+exports.ROUTEUR_ERROR = ROUTEUR_ERROR;
