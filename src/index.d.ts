@@ -38,3 +38,5 @@ interface RouteurProps {
 export class Routeur extends React.Component<RouteurProps> {
   constructor(props: RouteurProps);
 }
+
+export function routeurReducers<S>(state: S, action: Action): S;
